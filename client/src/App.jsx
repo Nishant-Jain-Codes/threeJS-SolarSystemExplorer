@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Home from './pages/Home'
+import SolarSystemView from './pages/SolarSystemView'
 const App = () => {
   return (
-    <div className='head-text'> 3js project solar system</div>
+    <main>
+      <Home/>
+      <SolarSystemView/>
+    </main>
   )
 }
 
