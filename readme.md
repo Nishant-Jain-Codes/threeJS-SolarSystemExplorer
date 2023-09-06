@@ -15,7 +15,7 @@ I am creating the Solar System Explorer project to master the technologies I've 
 Through building an interactive 3D solar system, my goal is to solidify my proficiency in these cutting-edge tools and elevate my web development skills to a higher level. This project allows me to apply what I've learned in a practical context.
 
 
-[Where I Learned This ?](https://www.youtube.com/watch?v=tllZWCQZ9_0&list=PLBVsUxSk6q0JyCiYNPpbKmRaopK5a-brL&index=9&t=8067s) 
+[Where I Learned This ?](https://www.youtube.com/watch?v=tllZWCQZ9_0&list=PLBVsUxSk6q0JyCiYNPpbKmRaopK5a-brL&index=10&t=8067s) 
 --------------
 from [@adrianhajdin](https://github.com/adrianhajdin/project_threejs_ai)
 
