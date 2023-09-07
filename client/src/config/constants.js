@@ -15,6 +15,17 @@ import {
     neptune,
 } from '../assets/planet - icons'
 
+import {
+    sun as sunTexture,
+    mercury as mercuryTexture,
+    venus as venusTexture,
+    earth as earthTexture,
+    mars as marsTexture,
+    jupiter as jupiterTexture,
+    saturn as saturnTexture,
+    uranus as uranusTexture,
+    neptune as neptuneTexture,
+} from '../assets/planet - textures'
 
 export const InformationTabs = [
     {
@@ -65,3 +76,14 @@ export const PlanetTabs = [
         icon: neptune,
     },
 ]
+export const PlanetTextures = {
+    'sun': sunTexture,
+    'mercury': mercuryTexture,
+    'venus': venusTexture,
+    'mars': marsTexture,
+    'earth': earthTexture,
+    'jupiter': jupiterTexture,
+    'saturn': saturnTexture,
+    'uranus': uranusTexture,
+    'neptune': neptuneTexture,
+};

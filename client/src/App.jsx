@@ -1,13 +1,13 @@
 import React from 'react'
 import Home from './pages/Home'
 import PlanetViewer from './pages/PlanetViewer'
-import Planet from './components/Planet'
+import PlanetModel from './canvas'
 const App = () => {
   return (
-    <main>
+    <main className="app transition-all ease-in" >
       <Home/>
       <PlanetViewer/>
-      <Planet/>
+      <PlanetModel/>
     </main>
   )
 }
