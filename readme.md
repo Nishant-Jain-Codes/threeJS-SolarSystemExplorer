@@ -48,7 +48,7 @@ This project is actively being developed to provide you with a fantastic solar s
     -   [x]  Set up the basic project structure.
 2.  Design Home Page:
 
-    -   [ ]  Design and create the home page with project information.
+    -   [x]  Design and create the home page with project information.
 3.  Create Solar System Page:
 
     -   [ ]  Design and create the solar system viewer page.
