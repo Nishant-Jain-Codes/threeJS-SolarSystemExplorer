@@ -1,12 +1,12 @@
 import React from 'react'
 import Home from './pages/Home'
-import SolarSystemView from './pages/SolarSystemView'
+import PlanetViewer from './pages/PlanetViewer'
 import Planet from './components/Planet'
 const App = () => {
   return (
     <main>
       <Home/>
-      <SolarSystemView/>
+      <PlanetViewer/>
       <Planet/>
     </main>
   )

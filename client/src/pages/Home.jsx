@@ -35,7 +35,7 @@ const Home = () => {
               <img
                 src='./astronaut.png'
                 alt="logo-image"
-                className='w-40 h-40  object-contain'
+                className='w-32 h-32  object-contain'
               />
             </motion.header>
             {/* About  */}
