@@ -9,6 +9,10 @@ const initialState = {
         isPlaying: false,
         speed: 1.0,
     },
+    theme: {
+        isDark: false,
+        isLight: true,
+    }
 };
 
 // Create a Valtio proxy object to manage the state
