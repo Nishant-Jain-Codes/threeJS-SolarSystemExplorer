@@ -33,9 +33,9 @@ const Home = () => {
               {...slideAnimation('down')}
             >
               <img
-                src={`./logo-${theme}.png`}
+                src='./astronaut.png'
                 alt="logo-image"
-                className='w-20 h-20 object-contain'
+                className='w-40 h-40  object-contain'
               />
             </motion.header>
             {/* About  */}
