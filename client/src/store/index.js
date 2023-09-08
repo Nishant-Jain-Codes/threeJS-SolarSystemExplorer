@@ -3,15 +3,15 @@ import { proxy } from 'valtio';
 // Define the initial state structure
 const initialState = {
     isHomePageVisible: true,
-    selectedPlanet: 'earth',
+    selectedPlanet: 'mars',
     isInfoPanelVisible: false,
     animationState: {
         isPlaying: false,
         speed: 1.0,
     },
     theme: {
-        isDark: false,
-        isLight: true,
+        isDark: true,
+        isLight: false,
     }
 };
 
