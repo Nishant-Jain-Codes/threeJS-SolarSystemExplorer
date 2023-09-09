@@ -3,7 +3,7 @@ import { proxy } from 'valtio';
 // Define the initial state structure
 const initialState = {
     isHomePageVisible: true,
-    selectedPlanet: 'mars',
+    selectedPlanet: 'earth',
     isInfoPanelVisible: false,
     animationState: {
         isPlaying: false,

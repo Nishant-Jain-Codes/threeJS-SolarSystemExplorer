@@ -13,7 +13,7 @@ import {
     saturn,
     uranus,
     neptune,
-} from '../assets/planet - icons'
+} from '../assets/planet-icons'
 
 import {
     sun as sunTexture,
@@ -25,7 +25,7 @@ import {
     saturn as saturnTexture,
     uranus as uranusTexture,
     neptune as neptuneTexture,
-} from '../assets/planet - textures'
+} from '../assets/planet-textures'
 
 export const InformationTabs = [
     {

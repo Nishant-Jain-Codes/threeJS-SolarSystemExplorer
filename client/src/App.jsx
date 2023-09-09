@@ -1,14 +1,16 @@
 import React from 'react'
 import Home from './pages/Home'
 import PlanetViewer from './pages/PlanetViewer'
-import { PlanetModel } from './components'
+import CanvasModel from './canvas'
 import { StarrySky } from './components'
 const App = () => {
   return (
-    <main className="app transition-all ease-in" >
+    <main 
+      className="app transition-all ease-in" 
+    >
       <Home/>
       <PlanetViewer/>
-      <PlanetModel/>
+      <CanvasModel/>
       <StarrySky/>
     </main>
   )
