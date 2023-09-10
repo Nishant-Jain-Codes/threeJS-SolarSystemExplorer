@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 import state from '../store'
 import { fadeAnimation, slideAnimation } from '../config/animations'
-import { 
+import {
   CustomButton,
   Tab,
+  Overview,
+  Ai
 } from '../components'
-import { InformationTabs , PlanetTabs } from '../config/constants'
+import { InformationTabs, PlanetTabs } from '../config/constants'
 
 const PlanetViewer = () => {
   const snap = useSnapshot(state)
+
+  const [activeInformationTab, setActiveInformationTab] = useState('')
+  const [prompt, setPrompt] = useState('');
+
+  const generateTabContent = () => {
+    switch (activeInformationTab) {
+      case "overview":
+        return <Overview />;
+        break;
+      case "ai":
+        return <Ai />;
+        break;
+      default:
+        return null;
+    }
+  }
   return (
     <AnimatePresence>
       {
@@ -24,20 +42,20 @@ const PlanetViewer = () => {
               <div className='flex items-center min-h-screen'>
                 <div className="information-tabs-container">
                   {
-                    InformationTabs.map((tab,index)=>(
+                    InformationTabs.map((tab, index) => (
                       <motion.div
                         key={tab.name}
-                        {...slideAnimation('left',index)}
+                        {...slideAnimation('left', index)}
                       >
-                      <Tab
-                        tab={tab}
-                        handleClick={()=>{}}
-                      />
+                        <Tab
+                          tab={tab}
+                          handleClick={() => { setActiveInformationTab(tab.name === activeInformationTab ? '' : tab.name) }}
+                        />
                       </motion.div>
                     ))
                   }
                   {/* function to generate content when clicked on the tabs */}
-                  {/* TODO pending... */}
+                  {generateTabContent()}
                 </div>
               </div>
             </div>
@@ -49,7 +67,13 @@ const PlanetViewer = () => {
               <CustomButton
                 type='filled'
                 title='Go Back'
-                handleClick={() => state.isHomePageVisible = true}
+                handleClick={() => {
+                  const backDelay = activeInformationTab === ''? 0 : 250;
+                  setActiveInformationTab('');
+                    setTimeout(() => {
+                      state.isHomePageVisible = true;
+                    }, backDelay);
+                }}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
             </motion.div>
@@ -57,23 +81,23 @@ const PlanetViewer = () => {
             <div
               key='planet-tabs'
               className='planets-tabs-container'
-              // {...slideAnimation('up')}
+            // {...slideAnimation('up')}
             >
-                {
-                  PlanetTabs.map((tab,index)=>(
-                    <motion.div
-                      key={tab.name}
-                      {...slideAnimation('up',index)}
-                    >
-                      <Tab
-                        tab={tab}
-                        isPlanetTab={true}
-                        isActiveTab={tab.name===snap.selectedPlanet}
-                        handleClick={()=>{}}
-                      />
-                    </motion.div>
-                  ))
-                }
+              {
+                PlanetTabs.map((tab, index) => (
+                  <motion.div
+                    key={tab.name}
+                    {...slideAnimation('up', index)}
+                  >
+                    <Tab
+                      tab={tab}
+                      isPlanetTab={true}
+                      isActiveTab={tab.name === snap.selectedPlanet}
+                      handleClick={() => { state.selectedPlanet = tab.name }}
+                    />
+                  </motion.div>
+                ))
+              }
             </div>
           </>
         )

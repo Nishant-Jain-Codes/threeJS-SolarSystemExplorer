@@ -10,6 +10,13 @@ const CustomButton = ({ type, title, customStyles, handleClick }) => {
                 color: snap.theme.isLight?"white":"black",
             }
         }
+        else if (type === 'outline') {
+            return {
+                backgroundColor: 'transparent',
+                color: snap.theme.isLight?"black":"white",
+                border: `1px solid ${snap.theme.isLight?"black":"white"}`,
+            }
+        }
     }
     return (
         <button
