@@ -3,7 +3,7 @@ import { useSnapshot } from 'valtio';
 import { useTexture } from '@react-three/drei';
 import state from '../store';
 import { PlanetTextures } from '../config/constants';
-
+import * as THREE from 'three';
 const Planet = () => {
     const snap = useSnapshot(state);
     const selectedPlanet = snap.selectedPlanet;
@@ -19,6 +19,8 @@ const Planet = () => {
                     map={texture}
                     roughness={0.5}
                     metalness={0.5}
+                    transparent={true}
+                    alphaTest={0.5}
                 />
             </mesh>
         </group>

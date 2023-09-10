@@ -51,36 +51,36 @@ This project is actively being developed to provide you with a fantastic solar s
     -   [x]  Design and create the home page with project information.
 3.  Create Solar System Page:
 
-    -   [ ]  Design and create the solar system viewer page.
+    -   [x]  Design and create the solar system viewer page.
 4.  Set Space Background:
 
-    -   [ ]  Set up a space-themed background for the solar system viewer.
+    -   [x]  Set up a space-themed background for the solar system viewer.
 
 #### 3D Solar System Visualization
 
 1.  Create Planets:
 
-    -   [ ]  Develop 3D models and textures for each planet in the solar system.
+    -   [x]  Develop 3D models and textures for each planet in the solar system.
 2.  Add Planet Information:
 
-    -   [ ]  Create an information section for each planet, including facts and details.
-    -   [ ]  Integrate the OpenAI API for generating fun facts and additional information.
+    -   [x]  Create an information section for each planet, including facts and details.
+    -   [x]  Integrate the OpenAI API for generating fun facts and additional information.
 3.  Arrange Planets in Order:
 
-    -   [ ]  Implement a system to order the planets correctly to form a solar system.
+    -   [x]  Implement a system to order the planets correctly to form a solar system.
 4.  Orbit Simulation:
 
     -   [ ]  Showcase the planets in their proper orbits around the sun.
 5.  Realistic Characteristics:
 
     -   [ ]  Apply realistic rotation and speed for each planet.
-    -   [ ]  Incorporate accurate data and details about the planets.
+    -   [x]  Incorporate accurate data and details about the planets.
 
 #### User Experience and Testing
 
 1.  Mobile Optimization:
 
-    -   [ ]  Make the app responsive and optimized for mobile devices, particularly in landscape mode.
+    -   [x]  Make the app responsive and optimized for mobile devices.
 2.  User Testing:
 
     -   [ ]  Conduct usability testing to gather feedback and make improvements.
@@ -94,7 +94,7 @@ This project is actively being developed to provide you with a fantastic solar s
 
 1.  Animations:
 
-    -   [ ]  Add animations to celestial bodies or user interactions to enhance the user experience.
+    -   [x]  Add animations to celestial bodies or user interactions to enhance the user experience.
 2.  Customization Options:
 
     -   [ ]  Implement user customization options for the solar system viewer.

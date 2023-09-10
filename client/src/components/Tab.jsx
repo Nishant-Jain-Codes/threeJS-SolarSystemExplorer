@@ -1,8 +1,5 @@
 import React from 'react'
-import state from '../store'
-import { useSnapshot } from 'valtio'
 const Tab = ({ tab, isPlanetTab, isActiveTab, handleClick }) => {
-    const snap = useSnapshot(state)
     return (
         <div
             key={tab.name}
@@ -11,7 +8,12 @@ const Tab = ({ tab, isPlanetTab, isActiveTab, handleClick }) => {
             <img
                 src={tab.icon}
                 alt={tab.name}
-                className={`${isPlanetTab? 'w-14 h-14 ':'w-10 h-10'} object-contain'}`}
+                className={`
+                    ${isPlanetTab? 'w-14 h-14 ':'w-10 h-10'}
+                        object-contain'}
+                    ${isActiveTab? 'border-4 border-white rounded-full':'border-2 border-transparent'}
+                    `
+                }
             />
         </div>
     )
