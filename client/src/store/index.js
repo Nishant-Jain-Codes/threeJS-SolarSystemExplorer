@@ -12,7 +12,8 @@ const initialState = {
     theme: {
         isDark: true,
         isLight: false,
-    }
+    },
+    planetGeneratedInformation : null
 };
 
 // Create a Valtio proxy object to manage the state

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 import state from '../store'
 import { fadeAnimation, slideAnimation } from '../config/animations'
+import config from '../config/config'
 import {
   CustomButton,
   Tab,
@@ -16,19 +17,58 @@ const PlanetViewer = () => {
 
   const [activeInformationTab, setActiveInformationTab] = useState('')
   const [prompt, setPrompt] = useState('');
-
+  const [generatingInformation, setGeneratingInformation] = useState(false);
   const generateTabContent = () => {
     switch (activeInformationTab) {
       case "overview":
         return <Overview />;
-        break;
       case "ai":
-        return <Ai />;
-        break;
+        return <Ai 
+                  prompt={prompt}
+                  setPrompt={setPrompt}
+                  generatingInformation={generatingInformation}
+                  handleSubmit={handleSubmit}
+              />;
       default:
         return null;
     }
   }
+  const handleSubmit = async () => {
+    if (!prompt) {
+      return alert('Please enter a prompt!');
+    }
+  
+    try {
+      setGeneratingInformation(true);
+      const response = await fetch(config.development.backendUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          prompt,
+          selectedPlanet: snap.selectedPlanet,
+        }),
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        // Handle the error gracefully, e.g., display an error message
+        alert(`Error: ${errorData.message}`);
+      } else {
+        // If the response is OK, proceed with processing the data
+        const data = await response.json();
+        state.planetGeneratedInformation = data.generatedInformation;
+      }
+    } catch (error) {
+      alert(`An error occurred: ${error.message}`);
+      console.error('Error:', error);
+    } finally {
+      setGeneratingInformation(false);
+      setActiveInformationTab('');
+    }
+  };
+  
   return (
     <AnimatePresence>
       {

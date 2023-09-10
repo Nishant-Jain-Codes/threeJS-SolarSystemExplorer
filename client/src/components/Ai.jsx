@@ -2,8 +2,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import React from 'react'
 import { slideAnimation} from '../config/animations'
 import CustomButton from './CustomButton'
+import state from '../store'
 
-const Ai = ({ prompt, setPrompt, generatingInformation, handleSubmit, aiResponse }) => {
+const Ai = ({ prompt, setPrompt, generatingInformation, handleSubmit}) => {
     return (
         <AnimatePresence>
             <motion.div {...slideAnimation('left')}
@@ -12,8 +13,8 @@ const Ai = ({ prompt, setPrompt, generatingInformation, handleSubmit, aiResponse
                 <p className='ai-response'>
                     {generatingInformation
                         ? 'Generating information...'
-                        : aiResponse
-                            ? aiResponse
+                        : state.planetGeneratedInformation
+                            ? state.planetGeneratedInformatione
                             : 'You can ask AI about the planet'}
                 </p>
                 <textarea
