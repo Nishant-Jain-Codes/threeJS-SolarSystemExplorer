@@ -16,7 +16,7 @@ const CameraRig = ({ children }) => {
         let targetPosition = [-3, 12, 12];
         if (snap.isHomePageVisible) {
             if (isBreakpoint) targetPosition = [-2, 17, 15];
-            if (isMobile) targetPosition = [0, 31, 29];
+            if (isMobile) targetPosition = [0, 42, 34];
         } else {
             if (isMobile) targetPosition = [-0.5, 26, 26];
             else targetPosition = [0, 12, 12];

@@ -1,9 +1,19 @@
 Solar System Explorer
 =====================
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe
+  src="https://www.youtube.com/embed/dzjTeuRjHCc?autoplay=1&mute=1"
+  title="Planet Explorer - Three.js | React.js"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+></iframe>
+</div>
 
-![Project Under Construction](https://img.shields.io/badge/Project-Under%20Construction-orange)
 
-Explore the wonders of our solar system in 3D! Dive into a mesmerizing journey through the celestial bodies that orbit our sun. This project combines the power of 3D graphics with artificial intelligence to bring you an interactive and educational experience.
+
+#####Explore the wonders of our solar system in 3D! Dive into a mesmerizing journey through the celestial bodies that orbit our sun. This project combines the power of 3D graphics with artificial intelligence to bring you an interactive and educational experience.
 
 Motivation
 ----------
@@ -18,6 +28,7 @@ Through building an interactive 3D solar system, my goal is to solidify my profi
 [Where I Learned This ?](https://www.youtube.com/watch?v=tllZWCQZ9_0&list=PLBVsUxSk6q0JyCiYNPpbKmRaopK5a-brL&index=10&t=8067s) 
 --------------
 from [@adrianhajdin](https://github.com/adrianhajdin/project_threejs_ai)
+![project image](https://camo.githubusercontent.com/b5c495c471a8031c7f376c68bfbf9393ec860a007c07260a9ae5345391dc0cde/68747470733a2f2f692e6962622e636f2f4b726b333943662f5468756d626e616c692e706e67)
 
 
 Technologies Used
@@ -68,12 +79,9 @@ This project is actively being developed to provide you with a fantastic solar s
 3.  Arrange Planets in Order:
 
     -   [x]  Implement a system to order the planets correctly to form a solar system.
-4.  Orbit Simulation:
 
-    -   [ ]  Showcase the planets in their proper orbits around the sun.
-5.  Realistic Characteristics:
+4.  Realistic Characteristics:
 
-    -   [ ]  Apply realistic rotation and speed for each planet.
     -   [x]  Incorporate accurate data and details about the planets.
 
 #### User Experience and Testing
@@ -81,9 +89,6 @@ This project is actively being developed to provide you with a fantastic solar s
 1.  Mobile Optimization:
 
     -   [x]  Make the app responsive and optimized for mobile devices.
-2.  User Testing:
-
-    -   [ ]  Conduct usability testing to gather feedback and make improvements.
 
 #### Deployment
 
@@ -95,20 +100,6 @@ This project is actively being developed to provide you with a fantastic solar s
 1.  Animations:
 
     -   [x]  Add animations to celestial bodies or user interactions to enhance the user experience.
-2.  Customization Options:
 
-    -   [ ]  Implement user customization options for the solar system viewer.
-3.  UI Enhancements:
-
-    -   [ ]  Improve the user interface for a polished and user-friendly design.
-4.  Performance Optimization:
-
-    -   [ ]  Optimize the application's performance for smoother interactions.
-5.  Enhanced Data:
-
-    -   [ ]  Expand the data available for each planet, including images, videos, and more.
-6.  Education Section:
-
-    -   [ ]  Include an educational section with additional space-related information.
 
 I want to emphasize that this to-do list is dynamic, and I can adjust it as I make progress and discover new requirements or features I'd like to add. Breaking down my tasks in this way will help me manage my project effectively and stay on track. I'm excited about this Solar System Explorer project and am ready to make improvements and adapt as needed to create an amazing interactive experience for users.
